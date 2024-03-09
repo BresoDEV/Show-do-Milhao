@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<style>
+    * {
+        background-color: blue;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .opcao {
+        background-color: rgb(162, 11, 11);
+        color: aliceblue;
+        font-size: xx-large;
+        border: none;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 5px;
+        width: 90%;
+        text-align: left;
+    }
+
+    .confirmar {
+        background-color: rgb(162, 11, 11);
+        color: aliceblue;
+        font-size: xx-large;
+        border: none;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 5px;
+        width: 90%;
+    }
+
+    .numero {
+        padding: 5px;
+        border: 4px solid black;
+        font-size: x-large;
+        color: black;
+        border-radius: 100%;
+        background-color: aliceblue;
+    }
+
+    span {
+        color: aliceblue;
+        font-size: x-large;
+        background-color: rgb(162, 11, 11);
+        font-weight: bolder;
+    }
+
+    .premioAtual {
+        background-color: rgb(238, 255, 0);
+        color: red;
+        font-size: x-large;
+        padding: 10px;
+        border-radius: 15px;
+        font-weight: bolder;
+    }
+</style>
+
+<body>
+    <center>
+
+        <div class="opcao" style="text-align:center ;">
+            <span id="pergunta">Ocorreu algum erro, ve o console</span>
+        </div>
+        <!-------------------------->
+        <div class="opcao" id="1">
+            <button class="numero">&nbsp;1&nbsp;</button>
+            <span id="opt1">Ocorreu algum erro, ve o console</span>
+        </div>
+
+        <div class="opcao" id="2">
+            <button class="numero">&nbsp;2&nbsp;</button>
+            <span id="opt2">Ocorreu algum erro, ve o console</span>
+        </div>
+
+        <div class="opcao" id="3">
+            <button class="numero">&nbsp;3&nbsp;</button>
+            <span id="opt3">Ocorreu algum erro, ve o console </span>
+        </div>
+
+        <div class="opcao" id="4">
+            <button class="numero">&nbsp;4&nbsp;</button>
+            <span id="opt4">Ocorreu algum erro, ve o console</span>
+        </div>
+
+        <button id="Confirmar" class="confirmar">Confirmar</button>
+
+        <button class="premioAtual" id="premioAtual">R$ </button>
+        <button class="premioAtual" id="nivel">Nivel </button>
+        <button class="premioAtual" id="Pular">Pular</button>
+
+    </center>
+</body>
+<script>
+    if (!localStorage.getItem('premioAtual')) {
+        localStorage.setItem('premioAtual', '100')
+    }
+    if (!localStorage.getItem('nivel')) {
+        localStorage.setItem('nivel', '1')
+    }
+    if (!localStorage.getItem('pulos')) {
+        localStorage.setItem('pulos', '3')
+    }
+
+
+    switch (parseInt(localStorage.getItem('nivel'))) {
+        case 1:
+            var nivelPerguntas = [
+                ['Qual o nome verdadeiro do BresoDEV?', 'Paulo', 'Eduardo', 'Ricardo', 'Daniell'],
+                ['Qual a idade do BresoDEV?', '18', '31', '25', '26'],
+            ];
+            var gabaritonivel = [
+                ['pergunta 1', 'Eduardo'],
+                ['pergunta 3', '31'],
+            ];
+            break;
+        //---------------------------------------
+        case 2:
+            var nivelPerguntas = [
+                ['Qual a idade do BresoDEV?', '18', '31', '25', '26'],
+                ['Qual a idade do BresoDEV?', '34', '30', '21', '31'],
+            ];
+            var gabaritonivel = [
+                ['pergunta 2', '31'],
+                ['pergunta 2', '31'],
+
+            ];
+            break;
+        //---------------------------------------
+        case 3:
+            var nivelPerguntas = [
+                ['Qual o nome da esposa do BresoDEV?', 'July', 'Carla', 'Paula', 'Ana'],
+                ['Qual o nome da esposa do BresoDEV?', 'July', 'Carla', 'Paula', 'Ana'],
+            ];
+            var gabaritonivel = [
+                ['pergunta 3', 'July'],
+                ['pergunta 3', 'July'],
+            ];
+            break;
+        //---------------------------------------
+        case 4:
+            var nivelPerguntas = [
+                ['Qual o nome da filha do BresoDEV?', 'July', 'Milena', 'Paula', 'Ana'],
+                ['Qual o nome da filha do BresoDEV?', 'July', 'Milena', 'Paula', 'Ana'],
+            ];
+            var gabaritonivel = [
+                ['pergunta 4', 'Milena'],
+                ['pergunta 4', 'Milena'],
+            ];
+            break;
+        //---------------------------------------
+        case 5: break;
+        case 6: break;
+        case 7: break;
+        case 8: break;
+        case 9: break;
+        case 10: break;
+        case 11: break;
+        case 12: break;
+        case 13: break;
+        case 14: break;
+        case 15: break;
+        case 16: break;
+        case 17: break;
+        case 18: break;
+        case 19: break;
+        case 20: break;
+        case 21: break;
+        case 22: break;
+        case 23: break;
+        case 24: break;
+        case 25: break;
+
+    }
+
+
+    var ArrayValores = [
+        '100', '200', '300', '400', '500', '800',
+        '1000', '2000', '3000', '4000', '5000', '8000',
+        '10000', '20000', '30000', '40000', '50000',
+        '80000', '100000',
+        '200000',
+        '300000',
+        '400000',
+        '500000',
+        '800000',
+        '1000000',
+    ];
+    //-----------------------
+    document.getElementById('Pular').addEventListener('click', () => {
+        if (parseInt(localStorage.getItem('pulos')) > 0) {
+            localStorage.setItem('pulos', parseInt(localStorage.getItem('pulos')) - 1);
+            window.location.reload();
+        }
+    });
+
+    //oculta o botao de pular, caso nao tenha mais pulos disponiveis
+    if (parseInt(localStorage.getItem('pulos')) == 0) {
+        document.getElementById('Pular').style.display = 'none';
+    }
+
+    document.getElementById('premioAtual').innerHTML += localStorage.getItem('premioAtual');
+    document.getElementById('nivel').innerHTML += localStorage.getItem('nivel');
+    document.getElementById('Pular').innerHTML += ' (restam ' + localStorage.getItem('pulos') + ')';
+    //--------------------
+
+    var nivelAtual = parseInt(localStorage.getItem('nivel'));
+    var selecionada = 0;
+    var Arrayselecionada = Math.floor(Math.random() * nivelPerguntas.length);
+    console.log(Arrayselecionada);
+
+    //-----------Embaralha as alternativas----------------
+    for (let index = nivelPerguntas[Arrayselecionada].length - 2; index > 0; index--) {
+        const j = Math.floor(Math.random() * (index + 1)) + 1;
+        [nivelPerguntas[Arrayselecionada][index], nivelPerguntas[Arrayselecionada][j]] = [nivelPerguntas[Arrayselecionada][j], nivelPerguntas[Arrayselecionada][index]];
+    }
+    //---------------------------
+    document.getElementById('pergunta').innerHTML = nivelPerguntas[Arrayselecionada][0];
+    document.getElementById('opt1').innerHTML = nivelPerguntas[Arrayselecionada][1];
+    document.getElementById('opt2').innerHTML = nivelPerguntas[Arrayselecionada][2];
+    document.getElementById('opt3').innerHTML = nivelPerguntas[Arrayselecionada][3];
+    document.getElementById('opt4').innerHTML = nivelPerguntas[Arrayselecionada][4];
+
+
+    document.getElementById('Confirmar').addEventListener('click', () => {
+
+        if (gabaritonivel[Arrayselecionada][1] === selecionada) {
+            console.log('audio: acertou');
+            acertou();
+
+            localStorage.setItem('premioAtual', nivelAtual);
+            localStorage.setItem('premioAtual', ArrayValores[nivelAtual])
+            localStorage.setItem('nivel', parseInt(localStorage.getItem('nivel')) + 1)
+            setTimeout(() => {
+                window.location.reload();
+            }, 3000);
+        }
+        else {
+            console.log('audio: errou');
+            errou();
+            localStorage.setItem('premioAtual', '100')
+            localStorage.setItem('nivel', '1')
+            localStorage.setItem('pulos', '3');
+            setTimeout(() => {
+                window.location.reload();
+            }, 3000);
+        }
+        //allUnselect();
+        //document.getElementById('1').style.backgroundColor = 'yellow';
+        //document.getElementById('opt1').style.backgroundColor = 'yellow';
+        //document.getElementById('opt1').style.color = 'black';
+        //selecionada = 1;
+    });
+
+    document.getElementById('1').addEventListener('click', () => {
+        allUnselect();
+        document.getElementById('1').style.backgroundColor = 'yellow';
+        document.getElementById('opt1').style.backgroundColor = 'yellow';
+        document.getElementById('opt1').style.color = 'black';
+        selecionada = document.getElementById('opt1').textContent;
+        console.log('audio: esta certo disso?');
+    });
+
+    document.getElementById('2').addEventListener('click', () => {
+        allUnselect();
+        document.getElementById('2').style.backgroundColor = 'yellow';
+        document.getElementById('opt2').style.backgroundColor = 'yellow';
+        document.getElementById('opt2').style.color = 'black';
+        selecionada = document.getElementById('opt2').textContent;
+        console.log('audio: esta certo disso?');
+    });
+
+    document.getElementById('3').addEventListener('click', () => {
+        allUnselect();
+        document.getElementById('3').style.backgroundColor = 'yellow';
+        document.getElementById('opt3').style.backgroundColor = 'yellow';
+        document.getElementById('opt3').style.color = 'black';
+        selecionada = document.getElementById('opt3').textContent;
+        console.log('audio: esta certo disso?');
+    });
+
+    document.getElementById('4').addEventListener('click', () => {
+        allUnselect();
+        document.getElementById('4').style.backgroundColor = 'yellow';
+        document.getElementById('opt4').style.backgroundColor = 'yellow';
+        document.getElementById('opt4').style.color = 'black';
+        selecionada = document.getElementById('opt4').textContent;
+        console.log('audio: esta certo disso?');
+    });
+
+
+
+
+
+
+
+    function errou() {
+        if (document.getElementById('opt1').textContent === gabaritonivel[Arrayselecionada][1]) {
+            document.getElementById('1').style.backgroundColor = 'green';
+            document.getElementById('opt1').style.backgroundColor = 'green';
+            document.getElementById('opt1').style.color = 'white';
+        }
+        if (document.getElementById('opt2').textContent === gabaritonivel[Arrayselecionada][1]) {
+            document.getElementById('2').style.backgroundColor = 'green';
+            document.getElementById('opt2').style.backgroundColor = 'green';
+            document.getElementById('opt2').style.color = 'white';
+        }
+        if (document.getElementById('opt3').textContent === gabaritonivel[Arrayselecionada][1]) {
+            document.getElementById('3').style.backgroundColor = 'green';
+            document.getElementById('opt3').style.backgroundColor = 'green';
+            document.getElementById('opt3').style.color = 'white';
+        }
+        if (document.getElementById('opt4').textContent === gabaritonivel[Arrayselecionada][1]) {
+            document.getElementById('4').style.backgroundColor = 'green';
+            document.getElementById('opt4').style.backgroundColor = 'green';
+            document.getElementById('opt4').style.color = 'white';
+        }
+    }
+
+
+
+
+
+
+    function acertou() {
+        if (document.getElementById('opt1').textContent === selecionada) {
+            document.getElementById('1').style.backgroundColor = 'green';
+            document.getElementById('opt1').style.backgroundColor = 'green';
+            document.getElementById('opt1').style.color = 'white';
+        }
+        if (document.getElementById('opt2').textContent === selecionada) {
+            document.getElementById('2').style.backgroundColor = 'green';
+            document.getElementById('opt2').style.backgroundColor = 'green';
+            document.getElementById('opt2').style.color = 'white';
+        }
+        if (document.getElementById('opt3').textContent === selecionada) {
+            document.getElementById('3').style.backgroundColor = 'green';
+            document.getElementById('opt3').style.backgroundColor = 'green';
+            document.getElementById('opt3').style.color = 'white';
+        }
+        if (document.getElementById('opt4').textContent === selecionada) {
+            document.getElementById('4').style.backgroundColor = 'green';
+            document.getElementById('opt4').style.backgroundColor = 'green';
+            document.getElementById('opt4').style.color = 'white';
+        }
+    }
+
+
+
+    function allUnselect() {
+        document.getElementById('1').style.backgroundColor = 'rgb(162, 11, 11)';
+        document.getElementById('opt1').style.backgroundColor = 'rgb(162, 11, 11)';
+
+        document.getElementById('2').style.backgroundColor = 'rgb(162, 11, 11)';
+        document.getElementById('opt2').style.backgroundColor = 'rgb(162, 11, 11)';
+
+        document.getElementById('3').style.backgroundColor = 'rgb(162, 11, 11)';
+        document.getElementById('opt3').style.backgroundColor = 'rgb(162, 11, 11)';
+
+        document.getElementById('4').style.backgroundColor = 'rgb(162, 11, 11)';
+        document.getElementById('opt4').style.backgroundColor = 'rgb(162, 11, 11)';
+
+
+        document.getElementById('opt1').style.color = 'white';
+        document.getElementById('opt2').style.color = 'white';
+        document.getElementById('opt3').style.color = 'white';
+        document.getElementById('opt4').style.color = 'white';
+    }
+
+</script>
+
+</html>
