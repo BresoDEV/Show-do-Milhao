@@ -114,70 +114,433 @@
     switch (parseInt(localStorage.getItem('nivel'))) {
         case 1:
             var nivelPerguntas = [
-                ['Qual o nome verdadeiro do BresoDEV?', 'Paulo', 'Eduardo', 'Ricardo', 'Daniell'],
-                ['Qual a idade do BresoDEV?', '18', '31', '25', '26'],
+                ['Qual é a capital do Brasil?', 'Belo Horizonte', 'Brasília', 'Rio de Janeiro', 'São Paulo'],
+                ['Quem escreveu a obra "Dom Quixote"?', 'Machado de Assis', 'Victor Hugo', 'William Shakespeare', 'Miguel de Cervantes'],
+                ['Qual é o maior planeta do sistema solar?', 'Saturno', 'Júpiter', 'Vênus', 'Marte'],
+                ['Qual é a montanha mais alta do mundo?', 'Monte McKinley', 'Monte Fuji', 'Monte Kilimanjaro', 'Monte Everest'],
+                ['Quem pintou a Mona Lisa?', 'Michelangelo', 'Vincent van Gogh', 'Pablo Picasso', 'Leonardo da Vinci'],
+                
             ];
             var gabaritonivel = [
-                ['pergunta 1', 'Eduardo'],
-                ['pergunta 3', '31'],
+                ['pergunta 1', 'Brasília'],
+                ['pergunta 2', 'Miguel de Cervantes'],
+                ['pergunta 3', 'Júpiter'],
+                ['pergunta 4', 'Monte Everest'],
+                ['pergunta 5', 'Leonardo da Vinci'],
             ];
             break;
         //---------------------------------------
         case 2:
-            var nivelPerguntas = [
-                ['Qual a idade do BresoDEV?', '18', '31', '25', '26'],
-                ['Qual a idade do BresoDEV?', '34', '30', '21', '31'],
+        var nivelPerguntas = [
+                ['Qual é o metal mais abundante na crosta terrestre?', 'Cobre', 'Prata', 'Ferro', 'Ouro'],
+                ['Qual é o maior oceano do mundo?', 'Ártico', 'Índico', 'Pacífico', 'Atlântico'],
+                ['Qual é o maior deserto do mundo?', 'Gobi', 'Kalahari', 'Atacama', 'Saara'],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                
             ];
             var gabaritonivel = [
-                ['pergunta 2', '31'],
-                ['pergunta 2', '31'],
-
+                ['pergunta 1', 'Ferro'],
+                ['pergunta 2', 'Pacífico'],
+                ['pergunta 3', 'Saara'],
+                ['pergunta 4', ''],
+                ['pergunta 5', ''],
             ];
             break;
         //---------------------------------------
         case 3:
-            var nivelPerguntas = [
-                ['Qual o nome da esposa do BresoDEV?', 'July', 'Carla', 'Paula', 'Ana'],
-                ['Qual o nome da esposa do BresoDEV?', 'July', 'Carla', 'Paula', 'Ana'],
+        var nivelPerguntas = [
+                ['Quem foi o primeiro presidente dos Estados Unidos?', 'Abraham Lincoln', 'Franklin D. Roosevelt', 'George Washington', 'Thomas Jefferson'],
+                ['Qual é o símbolo químico do ouro?', 'Rd', 'Fe', 'Ag', 'Au'],
+                ['Qual é a capital da França?', 'Madrid', 'Paris', 'Roma', 'Berlim'],
+                ['Quem escreveu a obra "A Divina Comédia"?', 'John Milton', 'William Wordsworth', 'Geoffrey Chaucer', 'Dante Alighieri'],
+                ['', '', '', '', ''],
+                
             ];
             var gabaritonivel = [
-                ['pergunta 3', 'July'],
-                ['pergunta 3', 'July'],
+                ['pergunta 1', 'George Washington'],
+                ['pergunta 2', 'Au'],
+                ['pergunta 3', 'Paris'],
+                ['pergunta 4', 'Dante Alighieri'],
+                ['pergunta 5', ''],
             ];
             break;
         //---------------------------------------
         case 4:
-            var nivelPerguntas = [
-                ['Qual o nome da filha do BresoDEV?', 'July', 'Milena', 'Paula', 'Ana'],
-                ['Qual o nome da filha do BresoDEV?', 'July', 'Milena', 'Paula', 'Ana'],
+        var nivelPerguntas = [
+                ['Qual é o segundo maior país do mundo em área territorial?', 'Brasil', 'Canadá', 'Estados Unidos', 'China'],
+                ['Quem escreveu a peça "Romeu e Julieta"?', 'Jane Austen', 'Charles Dickens', 'Miguel de Cervantes', 'William Shakespeare'],
+                ['Quem foi o primeiro homem a pisar na Lua?', 'Alan Shepard', 'Yuri Gagarin', 'Buzz Aldrin', 'Neil Armstrong'],
+                ['Qual é o maior continente do mundo em área territorial?', 'Europa', 'Ásia', 'América do Sul', 'África'],
+                ['Qual é o maior animal terrestre do mundo?', 'Rinoceronte', 'Hipopótamo', 'Girafa', 'Elefante Africano'],
+                
             ];
             var gabaritonivel = [
-                ['pergunta 4', 'Milena'],
-                ['pergunta 4', 'Milena'],
+                ['pergunta 1', 'Canadá'],
+                ['pergunta 2', 'William Shakespeare'],
+                ['pergunta 3', 'Neil Armstrong'],
+                ['pergunta 4', 'Ásia'],
+                ['pergunta 5', 'Elefante Africano'],
             ];
             break;
         //---------------------------------------
-        case 5: break;
-        case 6: break;
-        case 7: break;
-        case 8: break;
-        case 9: break;
-        case 10: break;
-        case 11: break;
-        case 12: break;
-        case 13: break;
-        case 14: break;
-        case 15: break;
-        case 16: break;
-        case 17: break;
-        case 18: break;
-        case 19: break;
-        case 20: break;
-        case 21: break;
-        case 22: break;
-        case 23: break;
-        case 24: break;
-        case 25: break;
+        case 5:
+        var nivelPerguntas = [
+                ['Qual é o maior rio do mundo em volume de água?', 'Mississipi', 'Yangtzé', 'Amazonas', 'Nilo'],
+                ['Qual é o país conhecido como "Terra do Sol Nascente"?', 'Austrália', 'Japão', 'Índia', 'China'],
+                ['Quem foi o inventor da lâmpada elétrica?', 'Albert Einstein', 'Alexander Graham Bell', 'Thomas Edison', 'Nikola Tesla'],
+                ['Qual é o autor da obra "O Pequeno Príncipe"?', 'Gabriel García Márquez', 'J.R.R. Tolkien', 'J.K. Rowling', 'Antoine de Saint-Exupéry'],
+                ['Quem foi o primeiro ser humano a viajar para o espaço?', 'John Glenn', 'Alan Shepard', 'Neil Armstrong', 'Yuri Gagarin'],
+                
+            ];
+            var gabaritonivel = [
+                ['pergunta 1', 'Amazonas'],
+                ['pergunta 2', 'Japão'],
+                ['pergunta 3', 'Thomas Edison'],
+                ['pergunta 4', 'Antoine de Saint-Exupéry'],
+                ['pergunta 5', 'Yuri Gagarin'],
+            ];
+             break;
+        case 6:
+        var nivelPerguntas = [
+                ['Qual é o nome da primeira mulher a ganhar dois prêmios Nobel em diferentes áreas?', 'Jane Goodall', 'Rosa Parks', 'Mother Teresa', 'Marie Curie'],
+                ['Qual é a velocidade da luz no vácuo?', '200.000.000 metros por segundo', '150.000.000 metros por segundo', '100.000.000 metros por segundo', '299.792.458 metros por segundo'],
+                ['Quem pintou o famoso quadro "Guernica"?', 'Michelangelo', 'Vincent van Gogh', 'Leonardo da Vinci', 'Pablo Picasso'],
+                ['Em qual país está localizado o famoso monumento Stonehenge?', 'Estados Unidos', 'Alemanha', 'Reino Unido', 'França'],
+                ['Qual é o maior estado em área territorial dos Estados Unidos?', 'Montana', 'Alasca', 'Califórnia', 'Texas'],
+                
+            ];
+            var gabaritonivel = [
+                ['pergunta 1', 'Marie Curie'],
+                ['pergunta 2', '299.792.458 metros por segundo'],
+                ['pergunta 3', 'Pablo Picasso'],
+                ['pergunta 4', 'Reino Unido'],
+                ['pergunta 5', 'Texas'],
+            ];
+              break;
+        case 7:
+        var nivelPerguntas = [
+                ['Qual é o segundo planeta do sistema solar?', 'Saturno', 'Júpiter', 'Marte', 'Vênus'],
+                ['Quem escreveu a peça de teatro "Hamlet"?', 'Tennessee Williams', 'Anton Chekhov', 'George Bernard Shaw', 'William Shakespeare'],
+                ['Qual é o nome do maior órgão do corpo humano?', 'Pulmões', 'Coração', 'Pele', 'Fígado'],
+                ['Qual é o nome do rio que corta a cidade de Londres?', 'Nilo', 'Danúbio', 'Sena', 'Tâmisa'],
+                ['Quem foi o primeiro presidente do Brasil?', 'Tancredo Neves', 'Juscelino Kubitschek', 'Deodoro da Fonseca', 'Getúlio Vargas'],
+                
+            ];
+            var gabaritonivel = [
+                ['pergunta 1', 'Vênus'],
+                ['pergunta 2', 'William Shakespeare'],
+                ['pergunta 3', 'Pele'],
+                ['pergunta 4', 'Tâmisa'],
+                ['pergunta 5', 'Deodoro da Fonseca'],
+            ];
+              break;
+        case 8:
+        var nivelPerguntas = [
+                ['Qual é o nome da maior cadeia montanhosa do mundo?', 'Alpes', 'Cordilheira dos Andes', 'Montanhas Rochosas', 'Himalaias'],
+                ['Quem é conhecido como o "pai da psicanálise"?', 'Erik Erikson', 'Alfred Adler', 'Carl Jung', 'Sigmund Freud'],
+                ['Qual é o nome do processo pelo qual as plantas produzem seu próprio alimento?', 'Digestão', 'Transpiração', 'Respiração', 'Fotossíntese'],
+                ['Quem é o autor da obra "Cem Anos de Solidão"?', 'Julio Cortázar', 'Isabel Allende', 'Mario Vargas Llosa', 'Gabriel García Márquez'],
+                ['Qual é a capital da Austrália?', 'Brisbane', 'Canberra', 'Melbourne', 'Sydney'],
+                
+            ];
+            var gabaritonivel = [
+                ['pergunta 1', 'Himalaias'],
+                ['pergunta 2', 'Sigmund Freud'],
+                ['pergunta 3', 'Fotossíntese'],
+                ['pergunta 4', 'Gabriel García Márquez'],
+                ['pergunta 5', 'Canberra'],
+            ];
+              break;
+        case 9:
+        var nivelPerguntas = [
+                ['Qual é o maior satélite natural do sistema solar?', 'Titã', 'Europa', 'Io', 'Lua'],
+                ['Quem foi o primeiro presidente dos Estados Unidos a ser impeachmado?', 'Donald Trump', 'Bill Clinton', 'Richard Nixon', 'Andrew Johnson'],
+                ['Quem foi o primeiro cientista a formular a teoria da relatividade geral?', 'Niels Bohr', 'Stephen Hawking', 'Isaac Newton', 'Albert Einstein'],
+                ['Quem é considerado o "pai da filosofia ocidental"?', 'Pitágoras', 'Aristóteles', 'Platão', 'Sócrates'],
+                ['Qual é o elemento químico mais pesado naturalmente encontrado na Terra?', 'Platina', 'Ouro', 'Ferro', 'Urânio'],
+                
+            ];
+            var gabaritonivel = [
+                ['pergunta 1', 'Lua'],
+                ['pergunta 2', 'Andrew Johnson'],
+                ['pergunta 3', 'Albert Einstein'],
+                ['pergunta 4', 'Sócrates'],
+                ['pergunta 5', 'Urânio'],
+            ];
+              break;
+        case 10: 
+        var nivelPerguntas = [
+                ['Qual é o nome do processo pelo qual as células se dividem em duas células filhas idênticas?', 'Replicação', 'Fertilização', 'Meiose', 'Mitose'],
+                ['Quem foi o líder do movimento pelos direitos civis nos Estados Unidos e famoso por seu discurso "Eu Tenho um Sonho"?', 'Barack Obama', 'Rosa Parks', 'Malcolm X', 'Martin Luther King Jr.'],
+                ['Qual é o nome da técnica de pintura em que o pigmento é misturado com água e aplicado em uma superfície úmida?', 'Guache', 'Têmpera', 'Óleo sobre tela', 'Aquarela'],
+                ['Quem foi o líder soviético durante a maior parte da Guerra Fria?', 'Nikita Khrushchev', 'Mikhail Gorbachev', 'Joseph Stalin', 'Leonid Brezhnev'],
+                ['Qual é o nome do fenômeno climático caracterizado pelo aquecimento anormal das águas superficiais do Oceano Pacífico?', 'Inversão Térmica', 'Efeito Estufa', 'La Niña', 'El Niño'],
+                
+            ];
+            var gabaritonivel = [
+                ['pergunta 1', 'Mitose'],
+                ['pergunta 2', 'Martin Luther King Jr.'],
+                ['pergunta 3', 'Aquarela'],
+                ['pergunta 4', 'Leonid Brezhnev'],
+                ['pergunta 5', 'El Niño'],
+            ];
+             break;
+        case 11: 
+        var nivelPerguntas = [
+                ['Qual é o nome do processo pelo qual a energia é liberada do núcleo de átomos instáveis?', 'Combustão', 'Explosão', 'Fusão nuclear', 'Fissão nuclear'],
+                ['Quem é o autor da obra "A Origem das Espécies", que introduziu a teoria da evolução por seleção natural?', 'Thomas Huxley', 'Alfred Russel Wallace', 'Gregor Mendel', 'Charles Darwin'],
+                ['Qual é o nome do filósofo grego conhecido por suas contribuições à ética e à lógica, e por ser aluno de Platão?', 'Zenão', 'Epicuro', 'Aristóteles', 'Sócrates'],
+                ['Qual foi o nome do programa espacial da União Soviética que enviou a primeira espaçonave tripulada ao espaço?', 'Mir', 'Sputnik', 'Soyuz', 'Vostok'],
+                ['Quem foi o primeiro imperador romano?', 'Trajano', 'Nero', 'Júlio César', 'Augusto'],
+                
+            ];
+            var gabaritonivel = [
+                ['pergunta 1', 'Fissão nuclear'],
+                ['pergunta 2', 'Charles Darwin'],
+                ['pergunta 3', 'Aristóteles'],
+                ['pergunta 4', 'Vostok'],
+                ['pergunta 5', 'Augusto'],
+            ];
+             break;
+        case 12: 
+        var nivelPerguntas = [
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                
+            ];
+            var gabaritonivel = [
+                ['pergunta 1', ''],
+                ['pergunta 2', ''],
+                ['pergunta 3', ''],
+                ['pergunta 4', ''],
+                ['pergunta 5', ''],
+            ];
+             break;
+        case 13: 
+        var nivelPerguntas = [
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                
+            ];
+            var gabaritonivel = [
+                ['pergunta 1', ''],
+                ['pergunta 2', ''],
+                ['pergunta 3', ''],
+                ['pergunta 4', ''],
+                ['pergunta 5', ''],
+            ];
+             break;
+        case 14: 
+        var nivelPerguntas = [
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                
+            ];
+            var gabaritonivel = [
+                ['pergunta 1', ''],
+                ['pergunta 2', ''],
+                ['pergunta 3', ''],
+                ['pergunta 4', ''],
+                ['pergunta 5', ''],
+            ];
+             break;
+        case 15: 
+        var nivelPerguntas = [
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                
+            ];
+            var gabaritonivel = [
+                ['pergunta 1', ''],
+                ['pergunta 2', ''],
+                ['pergunta 3', ''],
+                ['pergunta 4', ''],
+                ['pergunta 5', ''],
+            ];
+             break;
+        case 16: 
+        var nivelPerguntas = [
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                
+            ];
+            var gabaritonivel = [
+                ['pergunta 1', ''],
+                ['pergunta 2', ''],
+                ['pergunta 3', ''],
+                ['pergunta 4', ''],
+                ['pergunta 5', ''],
+            ];
+             break;
+        case 17: 
+        var nivelPerguntas = [
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                
+            ];
+            var gabaritonivel = [
+                ['pergunta 1', ''],
+                ['pergunta 2', ''],
+                ['pergunta 3', ''],
+                ['pergunta 4', ''],
+                ['pergunta 5', ''],
+            ];
+             break;
+        case 18: 
+        var nivelPerguntas = [
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                
+            ];
+            var gabaritonivel = [
+                ['pergunta 1', ''],
+                ['pergunta 2', ''],
+                ['pergunta 3', ''],
+                ['pergunta 4', ''],
+                ['pergunta 5', ''],
+            ];
+             break;
+        case 19: 
+        var nivelPerguntas = [
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                
+            ];
+            var gabaritonivel = [
+                ['pergunta 1', ''],
+                ['pergunta 2', ''],
+                ['pergunta 3', ''],
+                ['pergunta 4', ''],
+                ['pergunta 5', ''],
+            ];
+             break;
+        case 20: 
+        var nivelPerguntas = [
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                
+            ];
+            var gabaritonivel = [
+                ['pergunta 1', ''],
+                ['pergunta 2', ''],
+                ['pergunta 3', ''],
+                ['pergunta 4', ''],
+                ['pergunta 5', ''],
+            ];
+             break;
+        case 21: 
+        var nivelPerguntas = [
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                
+            ];
+            var gabaritonivel = [
+                ['pergunta 1', ''],
+                ['pergunta 2', ''],
+                ['pergunta 3', ''],
+                ['pergunta 4', ''],
+                ['pergunta 5', ''],
+            ];
+             break;
+        case 22: 
+        var nivelPerguntas = [
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                
+            ];
+            var gabaritonivel = [
+                ['pergunta 1', ''],
+                ['pergunta 2', ''],
+                ['pergunta 3', ''],
+                ['pergunta 4', ''],
+                ['pergunta 5', ''],
+            ];
+             break;
+        case 23: 
+        var nivelPerguntas = [
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                
+            ];
+            var gabaritonivel = [
+                ['pergunta 1', ''],
+                ['pergunta 2', ''],
+                ['pergunta 3', ''],
+                ['pergunta 4', ''],
+                ['pergunta 5', ''],
+            ];
+             break;
+        case 24: 
+        var nivelPerguntas = [
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                
+            ];
+            var gabaritonivel = [
+                ['pergunta 1', ''],
+                ['pergunta 2', ''],
+                ['pergunta 3', ''],
+                ['pergunta 4', ''],
+                ['pergunta 5', ''],
+            ];
+             break;
+        case 25: 
+        var nivelPerguntas = [
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                
+            ];
+            var gabaritonivel = [
+                ['pergunta 1', ''],
+                ['pergunta 2', ''],
+                ['pergunta 3', ''],
+                ['pergunta 4', ''],
+                ['pergunta 5', ''],
+            ];
+             break;
 
     }
 
