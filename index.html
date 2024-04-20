@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <style>
-    * {
+    *,html {
         background-color: blue;
         cursor: pointer;
         user-select: none;
@@ -578,7 +578,7 @@
     var nivelAtual = parseInt(localStorage.getItem('nivel'));
     var selecionada = 0;
     var Arrayselecionada = Math.floor(Math.random() * nivelPerguntas.length);
-    console.log(Arrayselecionada);
+    console.log('Resposta: '+gabaritonivel[Arrayselecionada][1]);
 
     //-----------Embaralha as alternativas----------------
     for (let index = nivelPerguntas[Arrayselecionada].length - 2; index > 0; index--) {
